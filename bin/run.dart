@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:pip_clients_applications_dart/pip_clients_applications_dart.dart';
+import 'package:pip_clients_applications/pip_clients_applications.dart';
 import 'package:pip_services3_commons/pip_services3_commons.dart';
 
 
