@@ -9,16 +9,14 @@ final APPLICATION1 = ApplicationV1(
     product: 'Product 1',
     copyrights: 'PipDevs 2018',
     min_ver: 0,
-    max_ver: 9999
-);
+    max_ver: 9999);
 final APPLICATION2 = ApplicationV1(
     id: '2',
     name: MultiString({'en': 'App2'}),
     product: 'Product 1',
     copyrights: 'PipDevs 2018',
     min_ver: 0,
-    max_ver: 9999
-);
+    max_ver: 9999);
 
 class ApplicationsClientFixtureV1 {
   IApplicationsClientV1 _client;
@@ -46,7 +44,8 @@ class ApplicationsClientFixtureV1 {
     expect(APPLICATION2.copyrights, application.copyrights);
 
     // Get all applications
-    var page = await _client.getApplications(null, FilterParams(), PagingParams());
+    var page =
+        await _client.getApplications(null, FilterParams(), PagingParams());
     expect(page, isNotNull);
     expect(page.data.length, 2);
     application1 = page.data[0];
@@ -67,5 +66,5 @@ class ApplicationsClientFixtureV1 {
     // Try to get deleted application
     application = await _client.getApplicationById(null, application1.id);
     expect(application, isNull);
-  }  
+  }
 }

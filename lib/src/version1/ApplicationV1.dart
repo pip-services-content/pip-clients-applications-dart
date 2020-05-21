@@ -14,7 +14,6 @@ class ApplicationV1 implements IStringIdentifiable {
   int max_ver;
   var access_rights; // String[]
 
-
   ApplicationV1(
       {String id,
       MultiString name,
@@ -67,5 +66,5 @@ class ApplicationV1 implements IStringIdentifiable {
       'max_ver': max_ver,
       'access_rights': access_rights
     };
-  }    
+  }
 }

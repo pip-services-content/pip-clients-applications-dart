@@ -20,11 +20,13 @@ void main() {
     ApplicationsClientFixtureV1 fixture;
 
     setUp(() async {
-
       client = ApplicationsHttpClientV1();
       client.configure(httpConfig);
       var references = References.fromTuples([
-        Descriptor('pip-services-applications', 'client', 'http', 'default', '1.0'), client]);
+        Descriptor(
+            'pip-services-applications', 'client', 'http', 'default', '1.0'),
+        client
+      ]);
       client.setReferences(references);
       fixture = ApplicationsClientFixtureV1(client);
       await client.open(null);

@@ -10,14 +10,14 @@ class ApplicationsClientFactory extends Factory {
       Descriptor('pip-services-applications', 'client', 'null', '*', '1.0');
   static final DirectClientDescriptor =
       Descriptor('pip-services-applications', 'client', 'direct', '*', '1.0');
-  static final CommandableHttpClientDescriptor =
-      Descriptor('pip-services-applications', 'client', 'commandable-http', '*', '1.0');
+  static final CommandableHttpClientDescriptor = Descriptor(
+      'pip-services-applications', 'client', 'commandable-http', '*', '1.0');
 
   ApplicationsClientFactory() : super() {
-    registerAsType(
-        ApplicationsClientFactory.NullClientDescriptor, ApplicationsNullClientV1);
-    registerAsType(
-        ApplicationsClientFactory.DirectClientDescriptor, ApplicationsDirectClientV1);
+    registerAsType(ApplicationsClientFactory.NullClientDescriptor,
+        ApplicationsNullClientV1);
+    registerAsType(ApplicationsClientFactory.DirectClientDescriptor,
+        ApplicationsDirectClientV1);
     registerAsType(ApplicationsClientFactory.CommandableHttpClientDescriptor,
         ApplicationsHttpClientV1);
   }
