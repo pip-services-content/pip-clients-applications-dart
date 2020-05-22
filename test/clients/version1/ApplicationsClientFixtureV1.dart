@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 import 'package:pip_services3_commons/pip_services3_commons.dart';
-
+import 'package:pip_services_applications/pip_services_applications.dart';
 import 'package:pip_clients_applications/pip_clients_applications.dart';
 
 final APPLICATION1 = ApplicationV1(

@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:pip_services3_commons/pip_services3_commons.dart';
 import 'package:pip_services3_rpc/pip_services3_rpc.dart';
-import './ApplicationV1.dart';
+import 'package:pip_services_applications/pip_services_applications.dart';
 import './IApplicationsClientV1.dart';
 
 class ApplicationsHttpClientV1 extends CommandableHttpClient

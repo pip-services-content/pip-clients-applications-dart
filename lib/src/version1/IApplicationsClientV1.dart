@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:pip_services3_commons/pip_services3_commons.dart';
+import 'package:pip_services_applications/pip_services_applications.dart';
 
-import './ApplicationV1.dart';
 
 abstract class IApplicationsClientV1 {
   /// Gets a page of applications retrieved by a given filter.
